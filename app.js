@@ -9,8 +9,8 @@ const questionRoutes = require("./api/routes/questions");
 const userRoutes = require('./api/routes/user');
 
 mongoose.connect(
-  "mongodb://node-shop:" +
-    process.env.MONGO_ATLAS_PW +
+  "mongodb://stackmini:" +
+    process.env.MONGO +
     "@node-rest-shop-shard-00-00-wovcj.mongodb.net:27017,node-rest-shop-shard-00-01-wovcj.mongodb.net:27017,node-rest-shop-shard-00-02-wovcj.mongodb.net:27017/test?ssl=true&replicaSet=node-rest-shop-shard-0&authSource=admin",
   {
     useMongoClient: true
